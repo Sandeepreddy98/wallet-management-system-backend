@@ -22,11 +22,7 @@ This is a **Node.js Express API** for managing user wallets, transactions (credi
 ### **1️⃣ Create a Wallet**
 | Method | Endpoint | Request Body | Response |
 |--------|---------|--------------|----------|
-| **POST** | `/api/wallet/setup` | ```json { "name": "John Doe", "balance": 1000 } ``` | ```json {
-    "_id": "67cf3dc492f273e6e28eeb53",
-    "balance": 1000,
-    "name": "Sandep",
-    "date": "2025-03-10T19:30:12.383Z"
+| **POST** | `/api/wallet/setup` | ```json { "name": "John Doe", "balance": 1000 } ``` | ```json { "_id":"67cf3dc492f273e6e28eeb53","balance": 1000,"name": "Sandep","date": "2025-03-10T19:30:12.383Z"
 } ``` |
 
 ---
