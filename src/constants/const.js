@@ -1,6 +1,7 @@
-const MONGO_URI='mongodb+srv://gsandeepreddy98:qYUOt91qlTprfvfo@namastedev.eo9vs.mongodb.net/wallet-management-system'
-const PORT=4000
-const SERVER_ADDRESS = 'localhost'
-const NODE_ENV = 'prod'
+require('dotenv').config()
+const MONGO_URI= process.env.MONGO_URI
+const PORT=process.env.PORT
+const SERVER_ADDRESS = process.env.SERVER_ADDRESS
+const NODE_ENV = process.env.NODE_ENV
 
 module.exports = {MONGO_URI,PORT,SERVER_ADDRESS,NODE_ENV}
