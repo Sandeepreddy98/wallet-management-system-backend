@@ -22,7 +22,12 @@ This is a **Node.js Express API** for managing user wallets, transactions (credi
 ### **1️⃣ Create a Wallet**
 | Method | Endpoint | Request Body | Response |
 |--------|---------|--------------|----------|
-| **POST** | `/api/wallet/create` | ```json { "name": "John Doe", "balance": 1000 } ``` | ```json { "success": true, "wallet": { "_id": "wallet123", "name": "John Doe", "balance": 1000 } } ``` |
+| **POST** | `/api/wallet/setup` | ```json { "name": "John Doe", "balance": 1000 } ``` | ```json {
+    "_id": "67cf3dc492f273e6e28eeb53",
+    "balance": 1000,
+    "name": "Sandep",
+    "date": "2025-03-10T19:30:12.383Z"
+} ``` |
 
 ---
 
@@ -36,7 +41,7 @@ This is a **Node.js Express API** for managing user wallets, transactions (credi
 ### **3️⃣ Credit/Debit a Wallet**
 | Method | Endpoint | Request Body | Response |
 |--------|---------|--------------|----------|
-| **POST** | `/api/wallet/transact` | ```json { "walletId": "wallet123", "amount": 200, "type": "CREDIT" } ``` | ```json { "success": true, "wallet": { "_id": "wallet123", "balance": 1200 } } ``` |
+| **POST** | `/api/transact/:walletId` | ```json {"amount": 200, "type": "CREDIT" } ``` | ```json { "success": true, "wallet": { "_id": "wallet123", "balance": 1200 } } ``` |
 
 ---
 
