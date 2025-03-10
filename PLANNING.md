@@ -53,9 +53,3 @@ This is a **Node.js Express API** for managing user wallets, transactions (credi
 | **GET** | `/api/transact/export` | `?walletId=wallet123` | A **CSV file download** containing transactions |
 
 ---
-
-## 🔧 **Setup & Installation**
-### **1️⃣ Clone the Repository**
-```sh
-git clone https://github.com/yourusername/wallet-management-system.git
-cd wallet-management-system
