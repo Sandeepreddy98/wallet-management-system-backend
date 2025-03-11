@@ -18,7 +18,7 @@ const connectMongo = async () => {
     await mongodb()
     console.log("Database connected");
     if(NODE_ENV !== 'test'){
-      app.listen(PORT,SERVER_ADDRESS, () => {
+      app.listen(PORT,() => {
         console.log(`Server started at http://${SERVER_ADDRESS}:${PORT}`);
       });
     }
