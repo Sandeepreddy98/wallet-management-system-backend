@@ -9,9 +9,6 @@ const {mongodb, closeMongo} = require('./config/database')
 app.use(cors());
 
 app.use("/api", apiRouter);
-app.use('/',(req,res) => {
-  <h1>Hey this is wallet management system</h1>
-})
 
 const connectMongo = async () => {
   try {
